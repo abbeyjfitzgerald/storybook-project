@@ -1,0 +1,35 @@
+@import '../unordered-list/unordered-list.component.scss';
+
+@keyframes loading {
+  0% {
+    background-position: -80px;
+  }
+
+  100% {
+    background-position: 300px;
+  }
+}
+
+.datatable-list--empty {
+
+}
+
+.datatable-list--empty  {
+  > li {
+    .box-row {
+      padding: .65rem;
+      animation: loading 1.7s infinite linear;
+      background: #dedfe1;
+      background-image: linear-gradient(to right, #dedfe1 0%, #f2f3f5 20%, #dedfe1 40%, #dedfe1 100%);
+      background-repeat: no-repeat;
+      margin-right: 2rem;
+    }
+
+    &:first-child {
+      .box-row {
+        background: #565f65;
+        background-image: linear-gradient(to right, #565f65 0%, #667178 20%, #565f65 40%, #565f65 100%);
+      }
+    }
+  }
+}

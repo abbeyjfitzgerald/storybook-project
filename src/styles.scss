@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import "./grid/flexboxgrid.css";
+
+html {
+  font-family: 'Muli', sans-serif;
+}
+
+
+/* Mixins and variables */
+
+$black: #293035;
+$base-font-size: 1rem;
+
+
+@mixin uppercase-text {
+  text-transform: uppercase;
+}
+
+@mixin left-align-text {
+  text-align: left;
+}

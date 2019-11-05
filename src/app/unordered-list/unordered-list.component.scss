@@ -1,0 +1,40 @@
+$black: #293035;
+$lt-gray: #DDDDDD;
+$base-font-size: 1rem;
+
+@mixin left-align-text {
+  text-align: left;
+}
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin uppercase-text {
+  text-transform: uppercase;
+}
+
+.datatable-list {
+  @include reset-list;
+  > li {
+    color: $black;
+    border: 1px solid $lt-gray;
+    padding: 1rem;
+  }
+  &.datatable-list--with-header {
+    > li {
+      &:first-child {
+        @include uppercase-text;
+        color: white;
+        background: $black;
+        border: none;
+      }
+    }
+  }
+}
+
+.material-icons {
+  font-size: inherit;
+}

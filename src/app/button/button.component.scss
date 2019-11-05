@@ -1,0 +1,60 @@
+@import '../app.component.scss';
+
+$btn-blue: #004899;
+$btn-lt-gray: #ECECEC;
+$btn-danger: #D04848;
+
+// try #AA1414
+
+@mixin button-outline {
+  border: 1px solid $btn-blue;
+}
+
+.btn {
+  font-size: .85rem;
+  padding: .5rem 1rem;
+  margin-right: 1rem;
+  color: $white;
+  @include border-radius(3px);
+  &:hover {
+    @include cursor-pointer;
+  }
+}
+
+.btn--disabled {
+  opacity: .85;
+  pointer-events: none;
+}
+
+.btn--primary {
+  background: $btn-blue;
+  @include button-outline;
+  &:hover {
+    background: darken($btn-blue, 10%);
+  }
+}
+
+.btn--default {
+  &:hover {
+    background-color: $btn-lt-gray;
+  }
+  @include button-outline;
+  color: $btn-blue;
+}
+
+.btn--success {
+
+}
+
+.btn--state-danger {
+  background: $btn-danger;
+  border: 1px solid $btn-danger;
+  &:hover {
+    background: darken($btn-danger, 10%);
+  }
+}
+
+.btn--pull-left {
+  margin-left: 1rem;
+  margin-right: 0;
+}
