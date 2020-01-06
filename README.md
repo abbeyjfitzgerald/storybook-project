@@ -1,3 +1,5 @@
+Thank you Increate Software: https://increate.co/blog/post/SBTutorial/master/tutorial.md
+
 # Storybook
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
