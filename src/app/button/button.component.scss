@@ -23,7 +23,10 @@ $btn-danger: #D04848;
 
 .btn--disabled {
   opacity: .85;
-  pointer-events: none;
+  // pointer-events: none;
+  &:hover {
+    cursor: no-drop;
+  }
 }
 
 .btn--primary {

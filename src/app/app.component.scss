@@ -1,4 +1,5 @@
 $white: #FFFFFF;
+$sb-light-gray: #ECECEC;
 
 @mixin border-radius($radius) {
   border-radius: $radius;
@@ -10,11 +11,16 @@ $white: #FFFFFF;
 }
 
 h2 {
-  margin: .5rem 0;
+  margin: 1rem 0;
+}
+
+pre {
+  background-color: $sb-light-gray;
+  padding: .5rem;
 }
 
 .example-section {
-  border: 1px solid #ECECEC;
+  border: 1px solid $sb-light-gray;
   box-shadow: 0 1px 12px 0 rgba(0,0,0,.08);
   padding: 1rem;
   margin-bottom: 2rem;
