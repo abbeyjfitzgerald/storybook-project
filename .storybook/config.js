@@ -16,22 +16,22 @@ const theme = create({
 
   // UI
   appBg: 'white',
-  appContentBg: 'silver',
-  appBorderColor: 'grey',
+  appContentBg: 'white',
+  appBorderColor: '#ECECEC',
   appBorderRadius: 4,
 
   // Typography
-  fontBase: '"Open Sans", sans-serif',
+  fontBase: '"Roboto", "Open Sans", sans-serif',
   fontCode: 'monospace',
 
   // Text colors
-  textColor: 'black',
+  textColor: '#273239',
   textInverseColor: 'rgba(255,255,255,0.9)',
 
   // Toolbar default and active colors
-  barTextColor: 'silver',
+  barTextColor: '#6C7F89',
   barSelectedColor: 'black',
-  barBg: 'hotpink',
+  barBg: '#F4F6F7',
 
   // Form colors
   inputBg: 'white',
