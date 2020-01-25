@@ -4,8 +4,44 @@ import { setConsoleOptions } from '@storybook/addon-console';
 import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 import { withCssResources } from '@storybook/addon-cssresources';
+import { create } from '@storybook/theming';
+import logo from '../src/assets/images/logo.png';
 
+// coral / ocean highlights
+const theme = create({
+  base: 'light',
+  colorPrimary: 'hotpink',
+  colorSecondary: 'deepskyblue',
+  brandImage: logo,
 
+  // UI
+  appBg: 'white',
+  appContentBg: 'silver',
+  appBorderColor: 'grey',
+  appBorderRadius: 4,
+
+  // Typography
+  fontBase: '"Open Sans", sans-serif',
+  fontCode: 'monospace',
+
+  // Text colors
+  textColor: 'black',
+  textInverseColor: 'rgba(255,255,255,0.9)',
+
+  // Toolbar default and active colors
+  barTextColor: 'silver',
+  barSelectedColor: 'black',
+  barBg: 'hotpink',
+
+  // Form colors
+  inputBg: 'white',
+  inputBorder: 'silver',
+  inputTextColor: 'black',
+  inputBorderRadius: 4
+
+});
+
+addParameters({ options: { theme } });
 setConsoleOptions({
   panelExclude: [],
 });
