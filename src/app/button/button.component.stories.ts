@@ -6,6 +6,7 @@ import { action } from '@storybook/addon-actions';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { object } from '@storybook/addon-knobs';
 import { ButtonComponent } from '../button/button.component';
+import * as markdown from '../notes/button.notes.md';
 
 // addParameters({
 //   cssresources: [
@@ -41,4 +42,6 @@ storiesOf('Button', module)
               className: ['btn']
           },
         };
+    },{
+      notes: { markdown }
     });

@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { object } from '@storybook/addon-knobs';
 import { UnorderedListComponent } from '../unordered-list/unordered-list.component';
-// import { withNotes } from '@storybook/addon-notes';
+import { withNotes } from '@storybook/addon-notes';
 
 storiesOf('Unordered List', module)
     .addDecorator(
