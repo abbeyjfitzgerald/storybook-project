@@ -8,6 +8,7 @@ import { NewsListComponent } from './news-list/news-list.component';
 import { UnorderedListComponent } from './unordered-list/unordered-list.component';
 import { UnorderedListLoadingComponent } from './unordered-list-loading/unordered-list-loading.component';
 import { ButtonComponent } from './button/button.component';
+import { WorkCardComponent } from './work-cards/work-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ButtonComponent } from './button/button.component';
     NewsListComponent,
     UnorderedListComponent,
     UnorderedListLoadingComponent,
-    ButtonComponent
+    ButtonComponent,
+    WorkCardComponent
   ],
   imports: [
     BrowserModule
