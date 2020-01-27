@@ -1,0 +1,105 @@
+@import '../app.component.scss';
+
+$btn-blue: #004899;
+$btn-lt-gray: #ECECEC;
+$btn-danger: #D04848;
+
+$xp-green: #0EAC87;
+$xp-green-lt: #DDF6EC;
+$dark-gray: #41535D;
+$main-text-gray: #6C7F89;
+
+// try #AA1414
+
+.work-card--xp {
+  border-top-color: $xp-green;
+  .category {
+    color: $xp-green;
+    background-color: $xp-green-lt;
+  }
+}
+
+.work-card {
+	background: white;
+	margin-bottom: 2em;
+  @include border-radius(7px);
+  border-top: 7px solid $dark-gray;
+  padding: 1rem;
+  box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+  h2 {
+    font-size: 1.25rem;
+    color: $dark-gray;
+    font-weight: 700;
+  }
+}
+
+// .card a {
+// 	color: black;
+// 	text-decoration: none;
+// }
+
+// .card a:hover {
+// 	box-shadow: 3px 3px 8px hsl(0, 0%, 80%);
+// }
+
+.category {
+  font-size: .75rem;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 6px;
+}
+
+.work-card-content {
+	padding: 1.4em;
+}
+
+.work-card-content h2 {
+	margin-top: 0;
+	margin-bottom: .5em;
+	font-weight: bold;
+}
+
+.work-card-content p {
+	font-size: 80%;
+}
+
+
+
+/* Flexbox stuff */
+
+@media screen and (min-width: 40em) {
+    .work-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: -1em;
+    }
+
+    .work-card {
+        display: flex;
+        flex: 0 1 calc(50% - .5em);
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (min-width: 60em) {
+    .work-cards {
+        margin-top: inherit;
+    }
+
+    .work-card {
+        flex: 0 1 calc(25% - 1em);
+        margin-bottom: 2em;
+    }
+}
+
+.centered {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+@media screen and (min-width: 52em) {
+    .centered {
+        max-width: 52em;
+    }
+}

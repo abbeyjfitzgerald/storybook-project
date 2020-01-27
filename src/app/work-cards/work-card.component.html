@@ -1,0 +1,24 @@
+<section class="work-cards">
+  <article [ngClass]="['work-card', 'work-card--xp']" >
+      <!-- <a href="#"> -->
+        <header>
+          <p class="category category__01">{{ category }}</p>
+          <picture class="thumbnail">
+              <img src="../shared/images/xp-icon.svg" aria-hidden="true" alt="Exact Path {{ category }}">
+          </picture>
+          <h2>Anderson Algebra 1A</h2>
+        </header>
+        <div class="work-card-content">
+            <p>Current Grade: 90%</p>
+            <p>Course Grade: 42%</p>
+        </div><!-- .card-content -->
+        <footer>
+          <div class="post-meta">
+            <img src="../shared/images/xp-icon.svg" aria-hidden="true" alt="Trophies">
+            <span class="resuts">19</span>
+            <p>{{ message }}</p>
+          </div>
+        </footer>
+      <!-- </a> -->
+  </article><!-- .card -->
+</section>
