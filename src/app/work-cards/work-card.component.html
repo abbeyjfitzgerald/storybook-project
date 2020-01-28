@@ -4,7 +4,7 @@
         <header>
           <p class="category category__01">{{ category }}</p>
           <picture class="thumbnail">
-              <img src="../shared/images/xp-icon.svg" aria-hidden="true" alt="Exact Path {{ category }}">
+              <img src="../shared/images/xp-icon.svg" aria-hidden="true" alt="Exact Path {{ 'category' | titlecase }}">
           </picture>
           <h2>Anderson Algebra 1A</h2>
         </header>
@@ -13,12 +13,14 @@
             <p>Course Grade: 42%</p>
         </div><!-- .card-content -->
         <footer>
-          <div class="post-meta">
-            <img src="../shared/images/xp-icon.svg" aria-hidden="true" alt="Trophies">
+          <div class="card-meta">
+            <!-- <img src="../shared/images/xp-icon.svg" aria-hidden="true" alt=" {{ 'messages' | titlecase }}">
             <span class="resuts">19</span>
-            <p>{{ message }}</p>
+            <p>{{ message }}</p> -->
+            <progress value="33" max="100"></progress>
           </div>
         </footer>
       <!-- </a> -->
   </article><!-- .card -->
+  
 </section>

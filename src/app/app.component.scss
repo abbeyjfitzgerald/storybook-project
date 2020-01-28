@@ -1,5 +1,64 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*****   Variables and Mixins *******/
+
 $white: #FFFFFF;
 $sb-light-gray: #ECECEC;
+$lt-gray-page: #F4F6F7;
+@mixin font-source-roboto($size: false, $color: false, $weight: false,  $lh: false) {
+    font-family: "Roboto", "Open Sans", Helvetica, Arial, sans-serif;
+    @if $size { font-size: $size; }
+    @if $color { color: $color; }
+    @if $weight { font-weight: $weight; }
+    @if $lh { line-height: $lh; }
+}
 
 @mixin border-radius($radius) {
   border-radius: $radius;
@@ -8,6 +67,16 @@ $sb-light-gray: #ECECEC;
 
 @mixin cursor-pointer {
   cursor: pointer;
+}
+
+/*****   Storybook Styling   *******/
+
+#storybook-preview-background {
+  background-color: $lt-gray-page;
+}
+
+#storybook-preview-background {
+  background-color: $lt-gray-page;
 }
 
 h2 {
