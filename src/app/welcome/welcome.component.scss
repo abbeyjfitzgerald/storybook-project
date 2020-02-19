@@ -1,0 +1,50 @@
+@import '../app.component.scss';
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+$btn-blue: #004899;
+$btn-lt-gray: #ECECEC;
+$btn-danger: #D04848;
+
+$xp-green: #0EAC87;
+$xp-green-lt: #DDF6EC;
+$status-green: #91D821;
+$dark-gray: #41535D;
+$main-text-gray: #6C7F89;
+$lt-gray: #EBEDF0;
+
+.welcome {
+	height: 100vh;
+  background: $lt-gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: -20px;
+  overflow: hidden;
+}
+
+h2 {
+	font-size: 1.5vw;
+}
+
+
+.banner-title {
+	font-size: 3.5vw;
+  // margin-top: 8vw;
+  color: #003D87;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.name-title {
+	font-weight: bold;
+}
+
+.banner-fixed {
+	position: fixed;
+}
