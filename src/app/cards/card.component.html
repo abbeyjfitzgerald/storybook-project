@@ -1,1 +1,24 @@
+<div class="card-wrapper">
+  <mat-card style="width: 400px;">
+    <mat-card-header>
+      <mat-chip-list>
+        <mat-chip>{{ type }}</mat-chip>
+      </mat-chip-list>
+      <mat-card-subtitle></mat-card-subtitle>
+      <div mat-card-avatar><i class="material-icons" aria-hidden="true">description</i></div>
+    </mat-card-header>
 
+    <mat-card-content>
+      <mat-card-title>{{ title }}</mat-card-title>
+      <span>Current Grade: {{current}}%</span>
+      <span>Course Grade: {{course}}%</span>
+    </mat-card-content>
+    <mat-progress-bar
+          class="example-margin"
+          [color]="color"
+          [mode]="mode"
+          [value]="value"
+          [bufferValue]="bufferValue">
+      </mat-progress-bar>
+  </mat-card>
+</div>
